@@ -16,9 +16,9 @@ public class Workplace {
     @OneToMany
     private Set<Employee> employees;
 
+    @OneToOne
+    private Adresses adresses;
 
-    //    @OneToOne(fetch = FetchType.LAZY, mappedBy = "workplace", cascade = CascadeType.ALL)
-//    public Adresses
 
     public long getId() {
         return id;

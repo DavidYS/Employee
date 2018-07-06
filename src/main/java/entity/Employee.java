@@ -19,7 +19,6 @@ public class Employee {
     private Set<Adresses> adresses = new HashSet<>();
 
     @ManyToOne
-
     private Workplace workplace;
 
     public long getId() {

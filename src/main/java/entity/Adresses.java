@@ -24,6 +24,8 @@ public class Adresses {
     )
     Set<Employee> employees = new HashSet<>();
 
+    @OneToOne
+    private Workplace workplace;
 
     public long getId() {
         return id;
