@@ -24,9 +24,6 @@ public class Workplace {
         return id;
     }
 
-
-
-
     public long getCompanyId() {
         return companyId;
     }

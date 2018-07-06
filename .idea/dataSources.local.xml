@@ -6,10 +6,15 @@
       <secret-storage>master_key</secret-storage>
       <first-sync>true</first-sync>
     </data-source>
-    <data-source name="@localhost" uuid="4e462434-cb30-42b6-b6e2-6b300585632b">
-      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
+    <data-source name="db_example@localhost" uuid="4e462434-cb30-42b6-b6e2-6b300585632b">
+      <database-info product="MySQL" version="5.7.22-0ubuntu0.16.04.1" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.46 ( Revision: 9cc87a48e75c2d2e87c1a293b2862ce651cb256e )">
+        <extra-name-characters>#@</extra-name-characters>
+        <identifier-quote-string>`</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="exact" quoted-identifiers="exact" />
       <secret-storage>master_key</secret-storage>
-      <first-sync>true</first-sync>
+      <user-name>springuser</user-name>
+      <introspection-schemas>*:db_example</introspection-schemas>
     </data-source>
   </component>
 </project>

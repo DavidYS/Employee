@@ -1,5 +1,6 @@
 package controllers;
 
+import entity.Adresses;
 import entity.Employee;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.domain.EntityScan;
@@ -28,9 +29,14 @@ public class Service {
         employee.getAdresses().forEach(address->{
             adressesRepository.save(address);
         });
+
+        employeeRepository.save(employee);
     }
     public void deleteEmployee(long id){
         Optional<Employee> employee = employeeRepository.findById(id);
         employeeRepository.delete(employee.get());
+    }
+    public void addAddress(Adresses address){
+        adressesRepository.save(address);
     }
 }

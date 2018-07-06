@@ -7,11 +7,11 @@
       <jdbc-driver>org.h2.Driver</jdbc-driver>
       <jdbc-url>jdbc:h2:tcp://localhost:8080/default</jdbc-url>
     </data-source>
-    <data-source source="LOCAL" name="@localhost" uuid="4e462434-cb30-42b6-b6e2-6b300585632b">
+    <data-source source="LOCAL" name="db_example@localhost" uuid="4e462434-cb30-42b6-b6e2-6b300585632b">
       <driver-ref>mysql</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
-      <jdbc-url>jdbc:mysql://localhost:3306</jdbc-url>
+      <jdbc-url>jdbc:mysql://localhost:3306/db_example</jdbc-url>
       <driver-properties>
         <property name="autoReconnect" value="true" />
         <property name="zeroDateTimeBehavior" value="convertToNull" />
